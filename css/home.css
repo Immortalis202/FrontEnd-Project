@@ -1,0 +1,486 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+
+    
+}
+
+body {
+    background: rgb(242,0,0);
+background: linear-gradient(28deg, rgba(242,0,0,1) 0%, rgba(247,151,25,1) 48%, rgba(252,27,179,1) 100%);
+    color: black;
+    -color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+    height: 55em;
+
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+    overflow: hidden;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.fa-primary {
+    color: #ff7eee;
+}
+
+.fa-secondary {
+    color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+}
+
+.logo-text {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+    animation: translateAndRotate 1s ease forwards;
+    
+}
+
+@keyframes translateAndRotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(3em) rotate(0deg);
+    }
+    100% {
+        transform: translateX(3em) rotate(-180deg);
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+
+    /*
+  .navbar:hover {
+    width: 16rem;
+  }
+    */
+
+    .navbar:hover .link-text {
+        display: inline;
+    }
+
+    .navbar:hover .logo svg {
+        margin-left: 11rem;
+    }
+
+    .navbar:hover .logo-text {
+        left: 0px;
+    }
+}
+
+.dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+
+    
+}
+
+.light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000000;
+    --bg-primary: #ffffff;
+    --bg-secondary: #e4e4e4;
+}
+
+.solar {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fdf6e3;
+    --bg-secondary: #f5e5b8;
+}
+
+.theme-icon {
+    display: none;
+}
+
+.dark #darkIcon {
+    display: block;
+}
+
+.light #lightIcon {
+    display: block;
+}
+
+.solar #solarIcon {
+    display: block;
+}
+
+
+.esci {
+    width: 19rem;
+    transition: cubic-bezier(1.555, 0.82, 0.165, 1);
+
+}
+
+.rientra {
+    width: 5rem;
+    transition: cubic-bezier(0.055, 0.82, 0.165, 1);
+
+}
+
+.esci-margine {
+    margin-left: 19rem;
+    transition: cubic-bezier(0.155, 0.82, 0.165, 1);
+
+}
+
+.rientra-margine {
+    margin-left: 5rem;
+    transition: cubic-bezier(0.055, 0.82, 0.165, 1);
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 500%;
+    animation: rotBGimg 4s cubic-bezier(0.076, 0.39, 0.8, 1) infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+    inset: 5px;
+    border-radius: 15px;
+    z-index: 1;
+    /* Ensure it's above the ::before */
+    display: flex;
+    /* Center the content inside */
+    justify-content: center;
+    align-items: center;
+}
+
+/* .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */
+
+.cardDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2em;
+    column-gap: 3em;
+    justify-items: center;
+}
+
+.cardCardDiv {
+    display: inline-flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 7rem;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #07182E;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 3;
+}
+
+
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #ff4949;
+    line-height: 1.4;
+}
+
+
+
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+button::before {
+    content: '';
+    width: 0;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 111%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease-out, left 0.4s ease-out;
+    background: #17C3B2;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 105%;
+}
+
+button:hover {
+    color: #111;
+}
+
+
+.center {
+    display: flex;
+    /* Center the content inside */
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+}
+
+h1 {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 4em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.right-alignment { 
+    display: flex;
+    align-content: flex-end;
+    justify-content: end;
+    margin-right: 11%;
+
+}
+
+.hide {
+    display: none;
+}
+
+#flagNav{
+    margin-left: 6px;
+}
+
+/* E' brutto da vedere perche' compare dal nulla, ma metterlo solo sul testo veniva un effetto epilettico */
+.right-alignment:hover > .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+
+
+  #flag { 
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.26);
+  }
+
+
+  #wikiNav {
+    margin-left: 11px;
+  }
+
+  #worldNav {
+    margin-left: 11px;
+  }
