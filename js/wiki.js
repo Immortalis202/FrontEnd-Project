@@ -1501,7 +1501,7 @@ let curiosities = {
 				"../assets/Azerbaijan/Yanar_Dagh.jpeg",
 				"../assets/Azerbaijan/Baku-Flame-Towers-Skyline-03-1900-1600x1069.jpg",
 				"../assets/all/az/vector.svg",
-				"../assets/Azerbaijan/İlham_Əliyev_Palcıq_Vulkanları_Turizm_Kompleksinin_təməlqoyma_mərasimində_(17).jpg",
+				"../assets/Azerbaijan/volcano.jpg",
 				"../assets/Azerbaijan/1696511466_Nagorno-Karabakh Region.webp",
 			],
 		},
