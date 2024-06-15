@@ -3367,7 +3367,7 @@ let curiosities = {
 			images: [
 				"../assets/all/lt/vector.svg",
 				"../assets/Lithuania/town-section-Vilnius-Lithuania.webp",
-				"../assets/Lithuania/Flag_of_the_Lithuanian_Soviet_Socialist_Republic_(1953–1988).svg.png",
+				"../assets/Lithuania/flag.png",
 				"../assets/Lithuania/Vilnius_old_town_by_Augustas_Didzgalvis.jpg",
 				"../assets/Lithuania/Dainu_svente_2014-07-06.jpg",
 			],
@@ -3403,7 +3403,7 @@ let curiosities = {
 				"../assets/latvia/lettland-sehenswurdgkeiten-riga.jpg",
 				"../assets/latvia/l372.jpg",
 				"../assets/latvia/green-latvian-forest.jpg",
-				"../assets/latvia/Flag_of_the_Latvian_Soviet_Socialist_Republic_(1953–1990).svg",
+				"../assets/latvia/flag.svg",
 			],
 		},
 		{
@@ -3489,7 +3489,7 @@ let curiosities = {
 				"../assets/moldova/triumphal-arch.jpg",
 				"../assets/moldova/images.jpeg",
 				"../assets/moldova/2-1.jpg",
-				"../assets/moldova/Flag_of_the_Moldavian_Soviet_Socialist_Republic_(1952–1990).svg.png",
+				"../assets/moldova/flag.png",
 			],
 		},
 		{
@@ -4561,7 +4561,7 @@ let curiosities = {
 				"../assets/serbia/GettyImages-847708760.webp",
 				"../assets/serbia/09-dunav-danube.jpg",
 				"../assets/serbia/18-serbian-culture-facts-1704783974.jpg",
-				"../assets/serbia/Serbian_Cyrillic_alphabet_(Српска_ћирилица).svg",
+				"../assets/serbia/alphabet.svg",
 			],
 		},
 		{
