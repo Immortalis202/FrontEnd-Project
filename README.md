@@ -12,7 +12,7 @@ A partire da una bandiera completamente oscurata dovrai tentare la fortuna e sce
 
 ## Wiki
 
-Ogni giorno si dovrebbe imparare una cosa nuova e questa sezione e' fatta apposta per questo, scopri segreti nascosti degli stati piu' esotici come Palau, Niue o gli stati selvaggi africani come la Namibia e l'Angona
+Ogni giorno si dovrebbe imparare una cosa nuova e questa sezione e' fatta apposta per questo, scopri segreti nascosti degli stati piu' esotici come Palau, Niue o gli stati selvaggi africani come la Namibia e l'Angola
 
 ## World Quiz
 
@@ -21,18 +21,19 @@ Per quelli dal cuore debole (o che non hanno voglia) esiste anche la versione de
 
 
 
-[VERCEL LINK]()
+[VERCEL LINK](https://front-end-project-zeta-bice.vercel.app/)
+[GITHUB](https://github.com/Immortalis202/FrontEnd-Project)
 | Requisiti                                                                                           | Dove Trovarli                                                                                                                             |
 | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Quattro pagine totali, home inclusa                                                                 | [Index](./index.html), [guessOutline](./guessOutline.html), [guessCountry](./guessCountry.html), [wiki](./wiki.html), [world](world.html) |
-| Una tabella, un’immagine e un elenco (in totale)                                                    | [tabella](./guessCountry.html), [immagine](./guessCountry.html), [elenco (navbar)](./index.html)                                            |
-| Un form, con anche un elemento multi-voce (checkbox, radiobutton, select, …) riempito dinamicamente | [radiobutton](./guessOutline.html), [RadioButtonJS](./guessOutline.js)                                                                                                            |
-| Un paragrafo (o più, basta che siano vicini) di almeno 500 parole                                   | [paragrafo](./wiki.html)                                                                                                                  |
-| Uno script di media complessità, che faccia uso di eventi e manipolazione del DOM                   | [manipolazioneDom](./guessCountry.js)                                                                                                                                          |
+| Quattro pagine totali, home inclusa                                                                 | [Index](./index.html), [guessOutline](./html/guessOutline.html), [guessCountry](./html/guessCountry.html), [wiki](./html/wiki.html), [world](./html/world.html) |
+| Una tabella, un’immagine e un elenco (in totale)                                                    | [tabella](./html/guessCountry.html), [immagine](./html/guessCountry.html), [elenco (navbar)](./html/index.html)                                            |
+| Un form, con anche un elemento multi-voce (checkbox, radiobutton, select, …) riempito dinamicamente | [radiobutton](./html/guessOutline.html), [RadioButtonJS](./js/guessOutline.js)                                                                                                            |
+| Un paragrafo (o più, basta che siano vicini) di almeno 500 parole                                   | [paragrafo](./html/wiki.html)                                                                                                                  |
+| Uno script di media complessità, che faccia uso di eventi e manipolazione del DOM                   | [manipolazioneDom](./js/guessCountry.js)                                                                                                                                          |
 | Una pagina con elementi disposti tramite flexbox                                                    |  [flexbox](./index.html)                                                                                                                                         |
-| Una pagina con elementi disposti tramite grid                                                       |     [grid](./guessCountry.html)                                                                                                                                      |
-| Una pagina stilizzata tramite Bootstrap (minimo 75%)                                                | [modal](./guessOutline.html)                                                                                                                                          |
-| Una funzione Ajax che utilizzi un file XML                                                          | [Ajax riga 5284](./wiki.js)                                                                                                                                          |
-| Una pagina in cui il CSS rispetti lo standard SaSS                                                  |  [Sass](./world.scss)                                                                                                                                         |
-| Un’animazione CSS                                                                                   |  [animazione](./wiki.html) [cssAnimazione](./wiki.css)                                                                                                                                         |
+| Una pagina con elementi disposti tramite grid                                                       |     [grid](./html/guessCountry.html)                                                                                                                                      |
+| Una pagina stilizzata tramite Bootstrap (minimo 75%)                                                | [modal](./html/guessOutline.html)                                                                                                                                          |
+| Una funzione Ajax che utilizzi un file XML                                                          | [Ajax riga 5284](./js/wiki.js)                                                                                                                                          |
+| Una pagina in cui il CSS rispetti lo standard SaSS                                                  |  [Sass](./css/world.scss)                                                                                                                                         |
+| Un’animazione CSS                                                                                   |  [animazione](./html/wiki.html) [cssAnimazione](./css/wiki.css)                                                                                                                                         |
 
