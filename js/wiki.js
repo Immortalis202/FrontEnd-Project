@@ -2199,7 +2199,7 @@ let curiosities = {
 			images: [
 				"../assets/all/dm/vector.svg",
 				"../assets/Dominica/Aerial-of-Roseau-capital-city-of-Dominica.webp",
-				"../assets/Dominica/Dominica-is-nicknamed-“The-Nature-Island”-for-its-.webp",
+				"../assets/Dominica/nature.webp",
 				"../assets/Dominica/20180830021609-the-boiling-lake-hike.jpeg",
 				"../assets/Dominica/National-Bird.jpg",
 			],
