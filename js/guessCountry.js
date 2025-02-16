@@ -3534,7 +3534,7 @@ inputBox.addEventListener("keydown", (event) => {
 			const imge = document.createElement("img");
 			cell3.appendChild(imge);
 			cell3.classList.add("cell");
-			imge.src = "./assets/arrow.svg";
+			imge.src = "../assets/arrow.svg";
 			imge.classList.add("arrow");
 			console.log(pend.toFixed(0));
 			imge.style.setProperty("--rotation-angle", pend.toFixed(0) + "deg");
